@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import ParentTest from './components/ParentTest.vue'
+import ChartsDemo from './components/ChartsDemo.vue'
 </script>
 
 <template>
-  <ParentTest />
+  <ChartsDemo />
 </template>
