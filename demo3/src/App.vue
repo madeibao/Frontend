@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import ChartsDemo from './components/ChartsDemo.vue'
+import HookDemo from './components/HookDemo.vue'
 </script>
 
 <template>
-  <ChartsDemo />
+  <HookDemo />
 </template>
