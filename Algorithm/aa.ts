@@ -1,7 +1,7 @@
 function interpret(s: string): string {
-    const n = s.length
-    let ans = ''
-    for (let i = 0; i < n;) {
+    const n:number = s.length
+    let ans:string = ''
+    for (let i:number = 0; i < n;) {
         if (s[i] == 'G') {
             ans += 'G';
             i++
