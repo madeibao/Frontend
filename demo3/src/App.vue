@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import HookDemo from './components/HookDemo.vue'
+import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <HookDemo />
+  <HelloWorld />
 </template>
