@@ -23,7 +23,6 @@ function isValid(s: string): boolean {
         ']': '['
     };
 
-
     for (const char of s) {
         if (['(', '{', '['].includes(char)) {
             stack.push(char);
