@@ -7,5 +7,5 @@ function areOccurrencesEqual(s: string): boolean {
     return [... new Set(map.values())].length === 1;
 };
 
-const res = areOccurrencesEqual([1,1,2,2]);
+const res = areOccurrencesEqual("1122");
 console.log(res);
