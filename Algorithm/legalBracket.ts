@@ -7,11 +7,28 @@ function isValid(s: string): boolean {
         ']': '['
     };
 
+    const bracketsSet2: Record<string, string> = {
+        ')': '(',
+        '}': '{',
+        ']': '['
+    };
+
+    // 用联合类型来约束相关内容
+    type BracketKey = ')' | '}' | ']';
+    type BracketValue = '(' | '{' | '[';
+
+    const bracketsSet3: Record<BracketKey, BracketValue> = {
+        ')': '(',
+        '}': '{',
+        ']': '['
+    };
+
+
     for (const char of s) {
         if (['(', '{', '['].includes(char)) {
             stack.push(char);
-        } else if (brackets[char]) {
-            if (stack.length === 0 || stack.pop() !== brackets[char]) {
+        } else if (bracketsSet2[char]) {
+            if (stack.length === 0 || stack.pop() !== bracketsSet2[char]) {
                 return false;
             }
         }
