@@ -19,3 +19,4 @@ function printArray<E>(arr: E[]): void {
 
 printArray([1, 2, 3, 4, 5]);
 printArray([1.0, 2.0, 3.0, 5.0]);
+printArray(["aa","ab","ac","ad"])
